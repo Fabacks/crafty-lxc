@@ -8,11 +8,11 @@ source <(curl -s https://raw.githubusercontent.com/Fabacks/crafty-lxc/main/build
 
 echo -e "Loading..."
 APP="Crafty"
-var_disk="10"
+var_disk="20"
 var_cpu="2"
 var_ram="2048"
 var_os="debian"
-var_version="11"
+var_version="12"
 variables
 color
 catch_errors
@@ -28,6 +28,7 @@ function default_settings() {
     BRG="vmbr0"
     NET="dhcp"
     PORT=""
+    GATE=""
     APT_CACHER=""
     APT_CACHER_IP=""
     DISABLEIP6="no"
@@ -59,5 +60,5 @@ default_settings
 description
 install_crafty
 
-msg_ok "Installation successful!\n"
+msg_ok "Completed Successfully!\n"
 echo -e "${APP} should be accessible once configured and started.\n"

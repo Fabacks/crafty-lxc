@@ -5,6 +5,6 @@ This repository contains scripts for installing and managing Crafty, a Minecraft
 ## Installation
 Exec line in the terminal on proxmox
 ``` bash 
-https://github.com/fabacks/crafty-lxc/raw/main/ct/script-install.sh
+bash -c "$(wget -qLO - https://raw.githubusercontent.com/Fabacks/crafty-lxc/main/script-install.sh)" 
 
 ```
